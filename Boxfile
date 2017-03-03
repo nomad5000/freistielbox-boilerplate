@@ -1,0 +1,14 @@
+version: 2.0
+env_specific_files:
+  docroot/.htaccess:
+    production: .htaccess.production
+    test: .htaccess.test
+    staging: .htaccess.staging
+  docroot/.htpasswd:
+    production: .htpasswd.production
+    test: .htpasswd.test
+    staging: htpasswd.staging
+  docroot/sites/default/settings.php:
+    production: settings.production.php
+    test: settings.test.php
+    staging: settings.staging.php
